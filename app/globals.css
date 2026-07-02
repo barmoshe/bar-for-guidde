@@ -1,0 +1,18 @@
+/* Minimal document base. The page surface is painted by `.gd-root` in
+   src/marketing/guidde/guidde.css; here we only zero the document margins
+   and set the white behind the app (Guidde's page surface) so there is no
+   dark flash before the React tree mounts. */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #ffffff; /* --gd-paper */
+  color-scheme: light;
+}
+
+body {
+  min-height: 100svh;
+}
